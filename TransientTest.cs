@@ -1,4 +1,5 @@
 ﻿namespace ScopeTransientSingletonWASM;
+
 public class TransientTest
 {
     public TransientTest() => Guid = Guid.NewGuid();

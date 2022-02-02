@@ -1,0 +1,35 @@
+﻿@page "/index2"
+@inject TransientTest TransientTest
+@inject ScopedTest ScopedTest
+@inject SingletonTest SingletonTest
+
+<PageTitle>Index 2</PageTitle>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+            @TransientTest.Guid
+        </div>
+        <div class="col-6">
+            @TransientTest.Guid
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            @ScopedTest.Guid
+        </div>
+        <div class="col-6">
+            @ScopedTest.Guid
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            @SingletonTest.Guid
+        </div>
+        <div class="col-6">
+            @SingletonTest.Guid
+        </div>
+    </div>
+</div>
